@@ -11,7 +11,7 @@ describe('App', () => {
   it('renders the todo app', () => {
     render(<App />)
     expect(screen.getByRole('heading', { name: 'Todo List' })).toBeInTheDocument()
-    expect(screen.getByText('PLT Solutions Demo CI/CD on Vercel')).toBeInTheDocument()
+    expect(screen.getByText('PLT Solutions Demo CI/CD')).toBeInTheDocument()
   })
 
   it('adds a todo', async () => {

@@ -20,7 +20,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>Todo List</h1>
-        <p className="subtitle">PLT Solutions Demo CI/CD on Vercel</p>
+        <p className="subtitle">PLT Solutions Demo CI/CD</p>
       </header>
 
       <main className="todo-app">
@@ -54,7 +54,7 @@ function App() {
         )}
       </main>
 
-      <DeployInfo />
+      {/* <DeployInfo /> */}
     </div>
   )
 }
