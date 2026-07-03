@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import DeployInfo from './components/DeployInfo.jsx'
+// import DeployInfo from './components/DeployInfo.jsx'
 import TodoFilter from './components/TodoFilter.jsx'
 import TodoInput from './components/TodoInput.jsx'
 import TodoList from './components/TodoList.jsx'
