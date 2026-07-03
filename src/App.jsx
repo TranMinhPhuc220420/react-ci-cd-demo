@@ -13,6 +13,8 @@ function App() {
 
   const visibleTodos = filterTodos(todos, filter)
   const remaining = remainingCount(todos)
+  const completed = todos.length - remaining
+  const percent = todos.length ? Math.round((completed / todos.length) * 100) : 0
 
   return (
     <div className="app">
@@ -22,6 +24,24 @@ function App() {
       </header>
 
       <main className="todo-app">
+        {todos.length > 0 && (
+          <section className="progress" aria-label="Progress">
+            <div className="progress-head">
+              <span><strong>{completed}</strong> of {todos.length} done</span>
+              <span>{percent}%</span>
+            </div>
+            <div
+              className="progress-bar"
+              role="progressbar"
+              aria-valuenow={percent}
+              aria-valuemin={0}
+              aria-valuemax={100}
+            >
+              <span style={{ width: `${percent}%` }} />
+            </div>
+          </section>
+        )}
+
         <TodoInput onAdd={add} />
         <TodoList todos={visibleTodos} onToggle={toggle} onRemove={remove} />
         {todos.length > 0 && (
