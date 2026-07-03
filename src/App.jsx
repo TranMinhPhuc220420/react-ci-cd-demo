@@ -20,7 +20,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>Todo List</h1>
-        <p className="subtitle">CI/CD on Vercel</p>
+        <p className="subtitle">PLT Solutions Demo CI/CD on Vercel</p>
       </header>
 
       <main className="todo-app">
